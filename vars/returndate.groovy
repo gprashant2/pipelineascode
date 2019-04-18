@@ -7,7 +7,8 @@ def dayofweek = sh returnStdout: true, script: 'date +"%a"'
 // echo newdate
 // echo dayofweek
 def date1 = new Date()
-SimpleDateFormat("EE").format(date)
+def day = date1[Calendar.DAY_OF_WEEK]
+ print day
  if ( dayofweek.equals('Thu') ) {
   echo hi
  }
