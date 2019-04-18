@@ -7,7 +7,7 @@ def val = '4'
  echo date
  echo newdate
  echo dayofweek
- if ( val.equals('4') ) {
+ if ( dayofweek.equals('4') ) {
   echo hi
  }
 // if ( dayofweek ) {
