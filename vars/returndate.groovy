@@ -5,7 +5,7 @@ def newdate = sh returnStdout: true, script: 'date -d "+7 days" +%m-%d-%Y'
 def dayofweek = sh returnStdout: true, script: 'date +"%a"'
 // echo date
 // echo newdate
-// echo dayofweek
+ echo dayofweek
 
  if ( dayofweek == 'Thu' ) {
   echo "one"
