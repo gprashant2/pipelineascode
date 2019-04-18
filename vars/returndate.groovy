@@ -2,16 +2,11 @@ def printWedonlydate() {
 //sh "DATE=`date +%d-%m-%Y`"
 def date = sh returnStdout: true, script: 'date +%d-%m-%Y'
 def newdate = sh returnStdout: true, script: 'date -d "+7 days" +%m-%d-%Y'
-def dayofweek = sh returnStdout: true, script: 'date +"%a"'
+def dayofweek = sh returnStdout: true, script: 'date +"%u"'
 // echo date
 // echo newdate
 // echo dayofweek
-def date1 = new Date()
-def day = date1[Calendar.DAY_OF_WEEK]
- print day
- if ( dayofweek.equals('Thu') ) {
-  echo hi
- }
+sh "print $dayofweek"
 // if ( dayofweek ) {
  // print date
  //}
