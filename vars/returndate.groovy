@@ -7,9 +7,10 @@ def  dayofweek1 = sh returnStdout: true, script: 'date +"%a"'
 // echo newdate
  echo dayofweek1
 
- if ( "sh returnStdout: true, script: 'date +"%a"'".equals('Thu') ) { 
-  echo "one"
- }
+def theday = 1 def mydate = new Date(system.currentTime())
+
+theday = mydate.getDay()
+ echo theday
 
 // if ( dayofweek ) {
  // print date
