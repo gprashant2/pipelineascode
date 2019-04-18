@@ -8,7 +8,7 @@ def  dayofweek1 = sh returnStdout: true, script: 'date +"%u"'
 Calendar date1 = Calendar.getInstance();
 int dayOfTheWeek = date1.get(Calendar.DAY_OF_WEEK);
  echo dayOfTheWeek
- if((dayOfTheWeek == Calendar.SATURDAY)  {
+ if((dayOfTheWeek == Calendar.SATURDAY))  {
    isWeekend = 'Yes';
 }
 
