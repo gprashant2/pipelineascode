@@ -1,5 +1,5 @@
 def printWedonlydate() {
-def DATE= sh "`date +%d-%m-%Y`"
+//def DATE= sh "`date +%d-%m-%Y`"
 def date = sh returnStdout: true, script: 'date +%d-%m-%Y'
 print date  
 //NEW_DATE=$(date -d "+7 days" '+%m-%d-%Y')
