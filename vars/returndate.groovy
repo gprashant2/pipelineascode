@@ -6,7 +6,7 @@ def dayofweek = sh returnStdout: true, script: 'date +"%u"'
 // echo date
 // echo newdate
 // echo dayofweek
-sh "print $dayofweek"
+sh "echo $dayofweek"
 // if ( dayofweek ) {
  // print date
  //}
