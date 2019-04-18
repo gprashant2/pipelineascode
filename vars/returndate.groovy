@@ -5,15 +5,13 @@ def newdate = sh returnStdout: true, script: 'date -d "+7 days" +%m-%d-%Y'
 def  dayofweek1 = sh returnStdout: true, script: 'date +"%u"'
 // echo date
 // echo newdate
-Calendar date = Calendar.getInstance();
-int dayOfTheWeek = date.get(Calendar.DAY_OF_WEEK);
+Calendar date1 = Calendar.getInstance();
+int dayOfTheWeek = date1.get(Calendar.DAY_OF_WEEK);
  echo dayOfTheWeek
  if((dayOfTheWeek == Calendar.SATURDAY)  {
    isWeekend = 'Yes';
 }
 
-
-if((dayofweek1 == 6) or (dayofweek1 ==7)){ return 'Yes' }else{ return 'No' }
 
 // if ( dayofweek ) {
  // print date
