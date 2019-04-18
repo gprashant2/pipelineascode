@@ -2,12 +2,12 @@ def printWedonlydate() {
 //sh "DATE=`date +%d-%m-%Y`"
 def date = sh returnStdout: true, script: 'date +%d-%m-%Y'
 def newdate = sh returnStdout: true, script: 'date -d "+7 days" +%m-%d-%Y'
-String  dayofweek = sh returnStdout: true, script: 'date +"%a"'
+def  dayofweek1 = sh returnStdout: true, script: 'date +"%a"'
 // echo date
 // echo newdate
  echo dayofweek
 
- if ( dayofweek.matches('Thu') ) {
+ if ( dayofweek1.matches('Thu') ) {
   echo "one"
  }
 
