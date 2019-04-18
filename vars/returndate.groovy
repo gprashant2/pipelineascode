@@ -3,7 +3,7 @@ def printWedonlydate() {
 def date = sh returnStdout: true, script: 'date +%d-%m-%Y'
 def newdate = sh returnStdout: true, script: 'date -d "+7 days" +%m-%d-%Y'
 def dayofweek = sh returnStdout: true, script: 'date +"%u"'
-sh "if [ $dayofweek == 4 ];  then    echo $date;"
+sh "if ( a == b) echo a; fi;"
 //def output = sh returnStdout: true, script: 'if [ "dayofweek" == 3 ];  then    echo date; else echo newdate; fi' 
  // sh "if [ "dayofweek" == 4 ];  then    echo date;  fi"
 //def output = sh returnStdout: true, script: 'if [ "$dayofweek" == 3 ];  then    echo $date; else    echo $new_date; fi'
