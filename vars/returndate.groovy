@@ -6,11 +6,9 @@ def  dayofweek1 = sh returnStdout: true, script: 'date +"%u"'
 // echo date
 // echo newdate
 def date1 = new Date()
-def day = date1[Calendar.DAY_OF_MONTH]
+def day = date1[Calendar.DAY_OF_WEEK]
  echo day
- if((day == Calendar.SATURDAY))  {
-   echo "hi";
-}
+
 
 
 // if ( dayofweek ) {
