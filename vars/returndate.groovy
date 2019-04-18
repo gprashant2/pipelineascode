@@ -2,11 +2,11 @@ def printWedonlydate() {
 //sh "DATE=`date +%d-%m-%Y`"
 def date = sh returnStdout: true, script: 'date +%d-%m-%Y'
 def newdate = sh returnStdout: true, script: 'date -d "+7 days" +%m-%d-%Y'
-int dayofweek = sh returnStdout: true, script: 'date +"%u"'
+def dayofweek = sh returnStdout: true, script: 'date +"%u"'
  echo date
  echo newdate
  echo dayofweek
- if ( "$dayofweek" == 4 ) {
+ if ( dayofweek.equals('4') ) {
   print date
  }
 //def output = sh returnStdout: true, script: 'if [ "dayofweek" == 3 ];  then    echo date; else echo newdate; fi' 
