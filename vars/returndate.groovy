@@ -6,7 +6,7 @@ def dayofweek = sh returnStdout: true, script: 'date +"%a"'
  echo date
  echo newdate
  echo dayofweek
- if ( dayofweek.equlas('Thu') ) {
+ if ( dayofweek.equals('Thu') ) {
   echo hi
  }
 // if ( dayofweek ) {
