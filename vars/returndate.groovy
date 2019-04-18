@@ -6,7 +6,7 @@ int dayofweek = sh returnStdout: true, script: 'date +"%u"'
  echo date
  echo newdate
  echo dayofweek
- if ( dayofweek == 4 ) {
+ if ( "$dayofweek" == 4 ) {
   print date
  }
 //def output = sh returnStdout: true, script: 'if [ "dayofweek" == 3 ];  then    echo date; else echo newdate; fi' 
