@@ -7,7 +7,7 @@ def  dayofweek1 = sh returnStdout: true, script: 'date +"%a"'
 // echo newdate
  echo dayofweek1
 
- if ( dayofweek1.matches('Thu') ) {
+ if ( dayofweek1.equals('Thu') ) {
   echo "one"
  }
 
