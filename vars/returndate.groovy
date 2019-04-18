@@ -1,5 +1,5 @@
 def printWedonlydate() {
- DATE=`date +%d-%m-%Y`
+sh "DATE=`date +%d-%m-%Y`"
 //def date = sh returnStdout: true, script: 'date +%d-%m-%Y'
 //def date = new Date().format("MM-dd-YYYY")
 print DATE  
