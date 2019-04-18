@@ -5,9 +5,7 @@ def newdate = sh returnStdout: true, script: 'date -d "+7 days" +%m-%d-%Y'
 def  dayofweek1 = sh returnStdout: true, script: 'date +"%u"'
 // echo date
 // echo newdate
-def date1 = new Date()
-def day = date1[Calendar.DAY_OF_WEEK]
- echo day
+
 
 
 
