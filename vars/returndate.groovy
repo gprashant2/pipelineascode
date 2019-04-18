@@ -7,9 +7,10 @@ int val = 4
  echo date
  echo newdate
  echo dayofweek
- if ( System.out.println(dayofweek.equals(val)) ) {
-  print date
- }
+ System.out.println(dayofweek.equals(val))
+// if ( System.out.println(dayofweek.equals(val)) ) {
+ // print date
+ //}
 //def output = sh returnStdout: true, script: 'if [ "dayofweek" == 3 ];  then    echo date; else echo newdate; fi' 
  // sh "if [ "dayofweek" == 4 ];  then    echo date;  fi"
 //def output = sh returnStdout: true, script: 'if [ "$dayofweek" == 3 ];  then    echo $date; else    echo $new_date; fi'
