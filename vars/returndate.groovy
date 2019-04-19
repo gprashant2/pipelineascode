@@ -8,7 +8,7 @@ def  dayweek = dayofweek1
 
 
 
- if ( dayofweek.equals('Thu' ) {
+ if ( dayofweek.equals('Thu' )) {
   print date
  }
 //def output = sh returnStdout: true, script: 'if [ "dayofweek" == 3 ];  then    echo date; else echo newdate; fi' 
