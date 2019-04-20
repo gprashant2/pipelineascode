@@ -1,9 +1,15 @@
 def printWedonlydate() {
 //sh "DATE=`date +%d-%m-%Y`"
 def date = sh returnStdout: true, script: 'date +%d-%m-%Y'
-def newdate = sh returnStdout: true, script: 'date -d "+7 days" +%m-%d-%Y'
-def  dayofweek1 = sh returnStdout: true, script: 'date +"%a"'
-echo dayofweek1
+Calendar cal = Calendar.getInstance();
+int day = cal.get(Calendar.DAY_OF_WEEK);
+print day
+if (day == 4){
+    print date
+}else{
+    def  nextwed = sh returnStdout: true, script: 'date -d "next wednesday" +%m-%d-%Y'
+    print nextwed
+}
 
 
 
