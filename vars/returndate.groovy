@@ -3,7 +3,6 @@ def printWedonlydate() {
 def date = sh returnStdout: true, script: 'date +%d-%m-%Y'
 Calendar cal = Calendar.getInstance();
 int day = cal.get(Calendar.DAY_OF_WEEK);
-print day
 if (day == 4){
     print date
 }else{
