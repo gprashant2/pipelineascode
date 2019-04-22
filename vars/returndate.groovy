@@ -8,8 +8,8 @@ if (day == 4){
 }else{
     def  nextwed = sh returnStdout: true, script: 'date -d "next wednesday" +%d-%m-%Y'
     print nextwed
-    println $RELEASE_BRANCH
-    println($RELEASE_BRANCH + "release-" + nextweb);
+    println RELEASE_BRANCH
+   // println($RELEASE_BRANCH + "release-" + nextweb);
 }
 
 
