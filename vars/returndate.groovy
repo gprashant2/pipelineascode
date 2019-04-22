@@ -7,11 +7,13 @@ int day = cal.get(Calendar.DAY_OF_WEEK);
 if (day == 4){
     print date
 }else{
-    def  RELEASE_BRANCH1 = sh returnStdout: true, script: 'date -d "next wednesday" +%d-%m-%Y'
+      RELEASE_BRANCH1 = sh returnStdout: true, script: 'date -d "next wednesday" +%d-%m-%Y'
   //  print nextwed
     // def RELEASE_BRANCH = nextwed
+    def concatt = "release-" + RELEASE_BRANCH1
+    print concatt
     
-    println RELEASE_BRANCH1
+  //  println RELEASE_BRANCH1
    
     
    // println("release-" + RELEASE_BRANCH);
