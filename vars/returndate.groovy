@@ -11,7 +11,7 @@ if (day == 4){
   //  print nextwed
     // def RELEASE_BRANCH = nextwed
     
-    println RELEASE_BRANCH2
+    println RELEASE_BRANCH1
     
    // println("release-" + RELEASE_BRANCH);
     
