@@ -6,12 +6,14 @@ int day = cal.get(Calendar.DAY_OF_WEEK);
 if (day == 4){
     print date
 }else{
-    def  nextwed = sh returnStdout: true, script: 'date -d "next wednesday" +%d-%m-%Y'
+    def  RELEASE_BRANCH1 = sh returnStdout: true, script: 'date -d "next wednesday" +%d-%m-%Y'
   //  print nextwed
     // def RELEASE_BRANCH = nextwed
     
-    println RELEASE_BRANCH
+    println RELEASE_BRANCH1
    // println("release-" + RELEASE_BRANCH);
+    
+   // echo "INFO: ${message}"
 }
 
 
