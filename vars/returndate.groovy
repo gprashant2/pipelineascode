@@ -5,6 +5,7 @@ int day = cal.get(Calendar.DAY_OF_WEEK);
 
     if (day == 2){
         RELEASE_BRANCH1 = "release-" + date
+        print RELEASE_BRANCH1
     }else{
         RELEASE_BRANCH1 = sh returnStdout: true, script: 'date -d "next wednesday" +%d-%m-%Y'
         RELEASE_BRANCH1 = "release-" + RELEASE_BRANCH1
