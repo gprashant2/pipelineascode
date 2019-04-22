@@ -8,7 +8,7 @@ if (day == 4){
 }else{
     def  nextwed = sh returnStdout: true, script: 'date -d "next wednesday" +%d-%m-%Y'
   //  print nextwed
-    def RELEASE_BRANCH = nextwed
+    // def RELEASE_BRANCH = nextwed
     
     println RELEASE_BRANCH
    // println("release-" + RELEASE_BRANCH);
