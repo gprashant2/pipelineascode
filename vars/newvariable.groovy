@@ -3,8 +3,8 @@
 
 def releasebranch() {
 
-import hudson.slaves.EnvironmentVariablesNodeProperty
-import jenkins.model.Jenkins
+//import hudson.slaves.EnvironmentVariablesNodeProperty
+//import jenkins.model.Jenkins
 
 instance = Jenkins.getInstance()
 globalNodeProperties = instance.getGlobalNodeProperties()
