@@ -1,8 +1,4 @@
-
-
-
-def releasebranch() {
-
+import hudson.slaves.EnvironmentVariablesNodeProperty
 instance = Jenkins.getInstance()
 globalNodeProperties = instance.getGlobalNodeProperties()
 envVarsNodePropertyList = globalNodeProperties.getAll(EnvironmentVariablesNodeProperty.class)
@@ -21,6 +17,11 @@ if ( envVarsNodePropertyList == null || envVarsNodePropertyList.size() == 0 ) {
 envVars.put("RELEASE_BRANCH3", "dummy")
 
 instance.save()
+
+
+def releasebranch() {
+
+
 
 
 
