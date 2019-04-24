@@ -26,10 +26,10 @@ Calendar cal = Calendar.getInstance();
 int day = cal.get(Calendar.DAY_OF_WEEK);
 
     if (day == 4){
-        RELEASE_BRANCH1 = "release-" + date
+        RELEASE_BRANCH6 = "release-" + date
     }else{
-      //  RELEASE_BRANCH1 = sh returnStdout: true, script: 'date -d "next wednesday" +%d-%m-%Y'
-        RELEASE_BRANCH6 = "release-" + RELEASE_BRANCH6
+        newdate = sh returnStdout: true, script: 'date -d "next wednesday" +%d-%m-%Y'
+        RELEASE_BRANCH6 = "release-" + newdate
        print RELEASE_BRANCH6
         
     }
